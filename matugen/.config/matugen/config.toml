@@ -1,0 +1,32 @@
+[config]
+
+[templates.waybar]
+input_path = '~/.config/matugen/template.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.hypr]
+input_path =  '~/.config/matugen/hypr.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.pywalfox]
+input_path = '~/.config/matugen/pywalfox.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
+[templates.rofi]
+input_path = '~/.config/matugen/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.swaync]
+input_path = '~/.config/matugen/template.css'
+output_path = '~/.config/swaync/colors.css'
+post_hook = 'swaync-client -rs'
