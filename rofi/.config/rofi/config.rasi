@@ -1,0 +1,102 @@
+
+@import "~/.config/rofi/colors.rasi"
+
+configuration {
+    modi:       "drun,calc,emoji,run,ssh";
+    show-icons: true;
+}
+
+window {
+    transparency: "real";
+    background-color: @on-primary-opacity;
+    text-color: @primary;
+    border-radius: 24px;
+    border: 2px;
+    border-color: @outline;
+}
+
+mainbox {
+    children: [inputbar, mode-switcher, message, listview];
+    spacing: 16px;
+    padding: 32px 16px 16px 16px;
+    text-color: @primary;
+}
+
+inputbar {
+    text-color: @primary;
+    background-color: @on-primary;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+prompt, textbox-prompt-colon, entry, case-indicator, promt,num-rows,num-filtered-rows,icon-current-entry {
+    text-color: @primary;
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @tertiary;
+}
+
+entry {
+    placeholder: "Type here";
+}
+
+mode-switcher, message {
+	text-color: @primary;
+}
+
+button, textbox {
+	background-color: @primary;
+	text-color: @on-primary;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+button selected {
+	background-color: @tertiary;
+    text-color: @on-tertiary;
+}
+
+listview {
+    scrollbar: true;
+    spacing: 4px;
+}
+
+scrollbar {
+    background-color: @on-secondary;
+    handle-color: @primary;
+    handle-width: 8px;
+}
+
+element {
+    font-size: 8px;
+    hightlight: bold underline;
+    padding: 4px 12px;
+    spacing: 12px;
+    border-radius: 8px;
+    children: [element-icon, element-text];
+}
+
+element-icon {
+    size: 32px;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+element normal normal {
+    background-color: @primary;
+}
+
+element alternate normal {
+    background-color: @on-primary-container;
+}
+
+element selected normal {
+    background-color: @on-tertiary;
+    text-color: @tertiary;
+    border: 2px solid;
+    border-color: @tertiary;
+}
