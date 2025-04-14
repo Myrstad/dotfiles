@@ -14,4 +14,4 @@ Soon: 'TBA'
 
 ### Path
 
-Please add `~/.config/hypr/scripts` to path for enabling wallpaper setting script
+~~Please add `~/.config/hypr/scripts` to path for enabling wallpaper setting script~~
