@@ -171,8 +171,8 @@ button:hover {
 }
 
 #battery.plugged {
-    color: @primary;
-    background-color: @on_primary;
+    background-color: @primary_container;
+    color: @on_primary_container;
 }
 
 @keyframes blink {
