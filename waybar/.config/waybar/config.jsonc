@@ -54,7 +54,8 @@
     // },
     "hyprland/window": {
         "icon": true,
-        "icon-size": 20
+        "icon-size": 20,
+        "separate-outputs": true
     },
     "keyboard-state": {
         "numlock": true,
