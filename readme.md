@@ -8,7 +8,7 @@ This *will* create and overide folders and files inside `~/.config/` mainly. Thi
 
 ### Dependencies
 
-`hyprland`, `hyrpaper`, `hypridle`, `waybar`, `rofi-wayland`, `rofi-calc`, `rofi-emoji`, `kitty`, `nautilus`, `cliphist`, `wtype`, `matugen-bin` (AUR), `python-pywalfox` (AUR), `wlogout` (AUR)
+`hyprland`, `hyrpaper`, `hyprlock`, `hypridle`, `waybar`, `rofi-wayland`, `rofi-calc`, `rofi-emoji`, `kitty`, `nautilus`, `cliphist`, `wtype`, `matugen-bin` (AUR), `python-pywalfox` (AUR), `wlogout` (AUR)
 
 Soon: 'TBA'
 
