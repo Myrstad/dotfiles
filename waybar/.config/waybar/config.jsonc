@@ -24,6 +24,7 @@
         "pulseaudio",
         "network",
         "power-profiles-daemon",
+        "custom/theme",
         //"cpu",
         "memory",
         //"temperature",
@@ -212,6 +213,17 @@
         "format" : "⏻ ",
 		"tooltip": false,
 		"on-click": "wlogout"
+    },
+    "custom/theme": {
+        "format": "{}", // Display the icon output by the script
+        "tooltip": false, // Disable tooltip unless you want one
+        "exec": "~/.config/hypr/scripts/get-theme-icon.sh", // Script to get the icon
+        "interval": "once", // Update icon only once at start and rely on reload signal
+        // OR use a long interval if the signal method isn't reliable
+        //"interval": 3600, // Check icon state periodically (e.g., every hour)
+        "on-click": "~/.config/hypr/scripts/toggle-theme.sh", // Script to run on click
+        "signal": 8 // Optional: Listen for SIGRTMIN+8 (or Waybar's USR2) to refresh - adjust if needed
+                     // The killall -SIGUSR2 waybar in apply_theme.sh should trigger a refresh anyway
     },
     "custom/notification": {
         "tooltip": false,

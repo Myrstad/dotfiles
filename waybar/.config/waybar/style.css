@@ -129,7 +129,8 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd,
-#custom-notification {
+#custom-notification,
+#custom-theme {
     padding: 0 12px;
     background-color: @primary_container;
     color: @on_primary_container;
@@ -314,7 +315,11 @@ label:focus {
 }
 
 #custom-notification {
-    padding: 0 14px 0 10px;
+    padding: 0 18px 0 14px;
+}
+
+#custom-theme {
+    padding: 0 18px 0 14px;
 }
 
 #idle_inhibitor {
