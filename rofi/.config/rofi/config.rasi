@@ -88,10 +88,12 @@ element-text {
 
 element normal normal {
     background-color: @primary;
+    text-color: @on-primary;
 }
 
 element alternate normal {
     background-color: @on-primary-container;
+    text-color: @primary-container;
 }
 
 element selected normal {
